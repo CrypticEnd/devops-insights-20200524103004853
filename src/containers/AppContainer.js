@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import fetch from 'isomorphic-unfetch'
 import ZipResponse from '../components/ZipResponse';
 import Zip from '../components/Zip';
+import ZipMap from '../components/ZipMap';
 
 function AppContainer(props) {
 
@@ -24,6 +25,11 @@ function AppContainer(props) {
             <div className="row mt-4">
                 <div className="col-sm-4"></div>
                 <Zip onZipChange={handleCityChange} clearResponse={clearResponse}/>
+                <div className="col-sm-4"></div>
+            </div>
+            <div className="row mt-4">
+                <div className="col-sm-4"></div>
+                <ZipMap clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
             <div className="row mt-4">
