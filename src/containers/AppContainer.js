@@ -24,12 +24,12 @@ function AppContainer(props) {
         <div>
             <div className="row mt-4">
                 <div className="col-sm-4"></div>
-                <Zip onZipChange={handleCityChange} clearResponse={clearResponse}/>
+                <Zip onCityChange={handleCityChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
             <div className="row mt-4">
                 <div className="col-sm-4"></div>
-                <ZipMap clearResponse={clearResponse}/>
+                <ZipMap onCityChange={handleCityChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
             <div className="row mt-4">
