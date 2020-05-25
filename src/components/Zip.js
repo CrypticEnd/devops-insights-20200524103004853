@@ -5,8 +5,8 @@ function Zip(props) {
     const [validationError, setValidationError] = useState(null);
 
     const validate = (event) => {
-        const zipCodePattern = /^([^0-9]*)$/;
-        const valid = zipCodePattern.test(event.target.value);
+        const cityCodePatton = /^([^0-9]*)$/;
+        const valid = cityCodePatton.test(event.target.value);
         if (!valid) {
             setValidationError('*A city should not contain numbers');
             props.clearResponse();
