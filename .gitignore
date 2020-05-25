@@ -10,3 +10,6 @@ junitfvt.xml
 chromedriver.log
 tests/coverage-summary.json
 mochatest.json
+.idea
+.vs
+devop.iml
