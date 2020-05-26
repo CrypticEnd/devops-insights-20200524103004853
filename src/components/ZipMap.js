@@ -8,7 +8,7 @@ function ZipMap(props) {
     mapScrip.async = true;
 
     window.initMap = function () {
-        new google.maps.Map(document.getElementsByClassName('map'), {
+        map = new google.maps.Map(document.getElementsByClassName('map'), {
             center: {lat: -39.824778, lng: 174.983245},
             zoom: 7
         });
@@ -16,7 +16,7 @@ function ZipMap(props) {
     document.head.appendChild(mapScrip);
 
     return (
-        <div className="map" onLoad={initMap()}></div>
+        <div className="map"></div>
     )
 }
 
