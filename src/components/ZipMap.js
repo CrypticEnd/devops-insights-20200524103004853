@@ -1,5 +1,5 @@
 import React from 'react';
-import google from 'https://maps.googleapis.com/maps/api/js?key=6b7b471967dd0851d0010cdecf28f829&callback=initMap';
+import google from 'googlemaps';
 
 function ZipMap(props) {
     var map;
@@ -17,9 +17,7 @@ function ZipMap(props) {
     document.head.appendChild(mapScrip);
 
     return (
-        <div className="map" onLoad={intiMap()}>
-
-        </div>
+        <div className="map" onLoad={intiMap()}>t</div>
     )
 }
 
