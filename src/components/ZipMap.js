@@ -14,22 +14,9 @@ function ZipMap(props) {
         // });
     }
 
-    //  function initMap() {
-    //     map = new google.maps.Map(document.getElementById('map'), {
-    //         center: {lat: -34.397, lng: 150.644},
-    //         zoom: 8
-    //         }
-    //     )}
-    // document.head.appendChild(mapScrip);
-
     return (
-        <div className="map" onLoad={intiMap()}>
-            <style jsx="true">{`
-                        .map{
-                        height:100%;
-                        }
-                    `}
-            </style>
+        <div className="map" style={"height:'25%'"} onLoad={intiMap()}>
+            test
         </div>
     )
 }
