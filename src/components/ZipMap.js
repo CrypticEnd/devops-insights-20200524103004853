@@ -15,7 +15,7 @@ function ZipMap(props) {
             center: {lat: -39.824778, lng: 174.983245},
             zoom: 7
         });
-    });
+    }
 
     return (
         <div className="map" onLoad={intiMap()}></div>
