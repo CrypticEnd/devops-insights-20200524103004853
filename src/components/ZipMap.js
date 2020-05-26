@@ -3,11 +3,9 @@ import React from 'react';
 function ZipMap(props) {
     var map;
     const mapScrip = document.createElement('script');
-    mapScrip.type = 'text/javascript';
     mapScrip.src = 'https://maps.googleapis.com/maps/api/js?key=6b7b471967dd0851d0010cdecf28f829&callback=initMap';
-    // mapScrip.defer = true;
-    // mapScrip.async = true;
-    document.head.appendChild(mapScrip);
+    mapScrip.defer = true;
+    mapScrip.async = true;
 
     function intiMap() {
         // new google.maps.Map(document.getElementsByClassName('map'), {
@@ -22,10 +20,16 @@ function ZipMap(props) {
     //         zoom: 8
     //         }
     //     )}
-
+    // document.head.appendChild(mapScrip);
 
     return (
-        <div ref="map" style="height: '500px', width: '500px'">
+        <div className="map" onLoad={intiMap()}>
+            <style jsx="true">{`
+                        .map{
+                        height:100%;
+                        }
+                    `}
+            </style>
         </div>
     )
 }
