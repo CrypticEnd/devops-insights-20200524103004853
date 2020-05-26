@@ -10,10 +10,10 @@ function ZipMap(props) {
     document.head.appendChild(mapScrip);
 
     function intiMap() {
-        new google.maps.Map(document.getElementsByClassName('map'), {
-            center: {lat: -39.824778, lng: 174.983245},
-            zoom: 7
-        });
+        // new google.maps.Map(document.getElementsByClassName('map'), {
+        //     center: {lat: -39.824778, lng: 174.983245},
+        //     zoom: 7
+        // });
     }
 
     //  function initMap() {
@@ -26,6 +26,7 @@ function ZipMap(props) {
 
     return (
         <div ref="map" style="height: '500px', width: '500px'">
+            t
         </div>
     )
 }
