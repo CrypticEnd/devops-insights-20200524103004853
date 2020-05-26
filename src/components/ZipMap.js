@@ -15,7 +15,7 @@ function ZipMap(props) {
     }
 
     return (
-        <div className="map" style={"height:'25%'"} onLoad={intiMap()}>
+        <div className="map" onLoad={intiMap()}>
             test
         </div>
     )
