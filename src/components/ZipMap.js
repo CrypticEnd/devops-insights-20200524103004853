@@ -26,7 +26,6 @@ function ZipMap(props) {
 
     return (
         <div ref="map" style="height: '500px', width: '500px'">
-            t
         </div>
     )
 }
