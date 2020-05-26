@@ -10,7 +10,7 @@ function ZipMap(props) {
     document.head.appendChild(mapScrip);
 
 
-    window.onload(function () {
+    function intiMap() {
         map = new google.maps.Map(document.getElementsByClassName('map'), {
             center: {lat: -39.824778, lng: 174.983245},
             zoom: 7
@@ -18,7 +18,7 @@ function ZipMap(props) {
     });
 
     return (
-        <div className="map"></div>
+        <div className="map" onLoad={intiMap()}></div>
     )
 }
 
