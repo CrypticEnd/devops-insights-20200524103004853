@@ -8,15 +8,16 @@ function ZipMap(props) {
     mapScrip.async = true;
 
     function intiMap() {
-        // new google.maps.Map(document.getElementsByClassName('map'), {
-        //     center: {lat: -39.824778, lng: 174.983245},
-        //     zoom: 7
-        // });
+        new google.maps.Map(document.getElementsByClassName('map'), {
+            center: {lat: -39.824778, lng: 174.983245},
+            zoom: 7
+        });
     }
+    document.head.appendChild(mapScrip);
 
     return (
         <div className="map" onLoad={intiMap()}>
-            test
+
         </div>
     )
 }
