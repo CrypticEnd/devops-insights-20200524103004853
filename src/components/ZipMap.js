@@ -9,10 +9,10 @@ function ZipMap(props) {
     document.head.appendChild(mapScrip);
 
     window.onloadend(function () {
-        // map = new google.maps.Map(document.getElementsByClassName('map'), {
-        //     center: {lat: -39.824778, lng: 174.983245},
-        //     zoom: 7
-        // });
+        map = new google.maps.Map(document.getElementsByClassName('map'), {
+            center: {lat: -39.824778, lng: 174.983245},
+            zoom: 7
+        });
     });
 
     return (
