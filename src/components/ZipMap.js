@@ -7,12 +7,12 @@ function ZipMap(props) {
     mapScrip.defer = true;
     mapScrip.async = true;
 
-    window.onload(function () {
-        map = new google.maps.Map(document.getElementsByClassName('map'), {
-            center: {lat: -39.824778, lng: 174.983245},
-            zoom: 7
-        });
-    });
+    // window.onload(function () {
+    //     map = new google.maps.Map(document.getElementsByClassName('map'), {
+    //         center: {lat: -39.824778, lng: 174.983245},
+    //         zoom: 7
+    //     });
+    // });
 
     document.head.appendChild(mapScrip);
 
